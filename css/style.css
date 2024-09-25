@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+img, iframe{
+    display: block;
+    width: 100%;
+}
+.Poster, .Banner{
+    display: none;
+}
+body{
+    background-color: rgb(96, 199, 234);
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #121220bd;      
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+header,footer,main{
+    max-width: 1680px;
+    margin: auto;
+}
+.header-bg{ 
+    background-color:rgba(165, 229, 250, 0.708); ;   
+    width: 100%;
+    padding: 1rem;
+    top: 0px;
+    right: 0;
+}
+.header-bg>header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+nav ul li{
+        padding: 0.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #0a25899e;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: 15px;
+ } 
+ nav a{
+    text-decoration: none;
+    color: #e8eef3e1;
+    
+} 
+h1, h2, h3{
+    font-size: 300;
+    text-shadow: 2px 2px 3px rgba(17, 17, 110, 0.395);
+    color: #1032469e;
+}
+h1{
+    display: none;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #2d80b19e;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0c3147d0
+}
+h3{
+    margin: 0.5rem 1rem 1rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #0c31479e
+}
+p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-shadow: 1px 1px 2px rgba(17, 17, 110, 0.443);
+}
+section, footer{
+    margin: 2rem 0.5rem;    
+    padding: 2rem 0;
+    background-color: #9fd0f573;    
+}  
+.perfiles, .eEpisodio, .contenedorGeneral,
+.posterText, .textoHistoria, .footer{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1rem;
+    
+}
+.perfil_personaje,.perfilEpisodio{
+    border-top: thin dotted #10364caf;
+    border-bottom: thin dotted #10364caf;
+    background-color: #8dc5f4a1;
+    display: flex;
+    flex-direction: column;    
+ }
+ .perfil_personaje,.perfilEpisodio,p{
+    padding: 1rem;
+ }
+ .rowImg>img{
+    max-width: 500px;
+    margin:auto;   
+}
+.rowImg>iframe{
+    width: 100%;  
+    }
+.rowActor, .rowTemporada, figcaption, .footerText{
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #07334acb;
+    background-color: #44b2ed84;
+}
+.footerText ,ul,li{
+    list-style: none;
+}
+.rowImg>iframe, .videoTriller>iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.contenedorGeneral{
+    margin: auto; 
+    width: 100%;
+ }
+ fieldset{
+	border: solid 2px #10577ebe;
+	padding: 20px 30px;
+	margin-top: 30px;    
+	}
+legend{
+        background: #44b2ed84;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 10px;
+ }
+ fieldset div span{
+    width: 100%;
+     padding: 0.5rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #053e5fd0;
+     font-size: 1rem;     
+ }
+ fieldset div input{
+	color: rgb(25, 85, 135);
+    display: block;
+    width: 100%;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 0.5rem;    
+}
+textarea{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.3rem;
+}
+.obteneloYa{    
+    padding: 2rem   
+}
+.footerText, details{  
+     
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;    
+    color: #f2f6f8d4;
+    list-style: none;
+    text-shadow: 2px 2px 3px rgb(8, 76, 132);
+}
+@media screen and (min-width:672px){
+    .Banner{
+        display: block;
+        margin-top: 1rem;
+    }
+    .rowImg, .perfiles, .perfilEpisodio{
+        margin-top: 1rem;
+    }
+    section, footer{
+        padding: 1.5rem;
+    }
+    nav ul{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    nav ul li{
+        display: inline-block;
+        min-width: 150px;
+    }
+    .perfiles, .eEpisodio, .contenedorGeneral{
+        grid-template-columns: 1fr 1fr;
+     }
+     .perfil_personaje, .perfilEpisodio, .footer{
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.596);
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        textarea{
+            padding: 2rem;
+        }
+    }
+    @media screen and (min-width:990px){
+        .Banner{
+            display: none;
+        }
+        .Poster{
+            display: block;      
+        }
+        .Poster{
+            margin-top: 1rem;
+        }
+        .Poster>img{
+            max-width: 500px;
+            margin:auto;   
+        }
+        .posterText, .textoHistoria{
+            grid-template-columns: 1fr 1fr;
+        }
+        .perfiles, .eEpisodio{
+            grid-template-columns: 1fr 1fr  1fr;
+        }
+                 
+       
+    }
